@@ -1,16 +1,10 @@
 # practice
 
-A new Flutter application.
+Flutter application UI Design for Log In
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This is the project for day one of the flutter Mobile Development Workshop
+This project has a log in screen for mobile
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
