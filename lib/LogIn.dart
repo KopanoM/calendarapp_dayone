@@ -1,98 +1,103 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:practice/RegisterPage.dart';
 
-class LogIn extends StatefulWidget {
+class LogIn extends StatefulWidget{
   @override
-  _LogInState createState() => _LogInState();
+  _LogInState createState() =>_LogInState();
+
 }
 
-class _LogInState extends State<LogIn> {
+class _LogInState extends State<LogIn>{
 
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
-     //appBar: AppBar(title: 'Calendar App',),
-      body: Container(
-        width: MediaQuery.of(context).size.width,
-        color: Colors.white,
-        padding: EdgeInsets.all(20.0),
+        body: Container(
+          color: Colors.white,
 
-        child: Column(
-         mainAxisAlignment: MainAxisAlignment.center,
-         crossAxisAlignment: CrossAxisAlignment.center,
-        children: <Widget>[
-
-          Image.asset('assets/calendar.jpg'),
-
-          TextField(
-            decoration: InputDecoration(
-              border: OutlineInputBorder(
-                borderRadius: BorderRadius.all(Radius.circular(20.0))
-              ),
-              filled: true,
-              hintStyle: TextStyle(color: Colors.grey),
-              hintText: 'Email',
-              fillColor: Colors.white70
-            ),
-          ),
-
-          SizedBox(height: 20.0,),
-
-
-          TextField(
-            decoration: InputDecoration(
-                border: OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(20.0))
-                ),
-                filled: true,
-                hintStyle: TextStyle(color: Colors.grey),
-                hintText: 'Password',
-                fillColor: Colors.white70
-
-            ),
-
-          ),
-          SizedBox(height: 20.0,),
-
-
-          RaisedButton(
-            onPressed: (){},
-            color: Colors.lightBlue,
-            child: Text('Log In',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
-          ),
-
-          SizedBox(height: 20.0,),
-
-          Row(
-
+          child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-            Text('Dont have an account?'),
-            Text('Sign Up Here',style: TextStyle(color: Colors.blueAccent),),
+              
+              Image.asset('assets/calendar.jpg'),
 
-          ],),
+              SizedBox(height: 20.0,),
+
+              TextField(
+                decoration: InputDecoration(
+                  fillColor: Colors.white70,
+                  hintText: 'Email',
+                  filled: false,
+                  hintStyle: TextStyle(color: Colors.grey),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(20.0))
+                  )
+                )
+              ),
+
+              SizedBox(height: 20.0,),
+
+              TextField(
+                  decoration: InputDecoration(
+                      fillColor: Colors.white70,
+                      hintText: 'Password',
+                      filled: false,
+                      hintStyle: TextStyle(color: Colors.grey),
+                      border: OutlineInputBorder(
+                          borderRadius: BorderRadius.all(Radius.circular(20.0))
+                      )
+                  )
+              ),
+
+              SizedBox(height: 20.0,),
+
+              RaisedButton(
+                onPressed: (){},
+                color: Colors.blue,
+                child: Text('Log In',style: TextStyle(color: Colors.white),),
+              ),
+
+              SizedBox(height: 20.0,),
+
+              GestureDetector(
+                onTap: (){
+
+                  Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=>Register()));
 
 
 
 
+                },
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: <Widget>[
+                    Text('Dont have an account?'),
+                    Text('Sign Up Here',style: TextStyle(color: Colors.blue),)
+                  ],
 
-        ],
+                ),
+
+
+
+              )
+
+
+
+            ],
+
+
+
+          ),
+
 
 
         ),
 
-
-
-
-      ),
-
-
-
-
     );
   }
+
+
 }
-
-
