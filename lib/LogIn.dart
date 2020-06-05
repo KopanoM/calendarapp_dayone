@@ -69,7 +69,7 @@ class _LogInState extends State<LogIn> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-            Text('Dont have an account?'),
+            Text('Dont have an account?'), //test
             Text('Sign Up Here',style: TextStyle(color: Colors.blueAccent),),
 
           ],),
